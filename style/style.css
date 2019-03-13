@@ -1,0 +1,99 @@
+body {
+    filter: invert(1);
+    background-color: #040607;
+    opacity: 0.9;
+}
+
+#game-wrapper {
+    width: 90vw;
+    margin: 0 auto;
+    box-shadow: 0px 0px 18px #afafaf;
+    border-radius: 9px;
+    color: #0c2525;
+    letter-spacing: 0.32vw;
+    max-width: 90vh;
+}
+
+#game-info {
+    padding: 15px;
+    font-family: monospace;
+    font-size: 2.7vw;
+    font-weight: bold;
+    text-align: center;
+    background-color: #eee;
+}
+
+#squares {
+    height: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    box-sizing: border-box;
+    max-height: 78vh;
+}
+
+.square {
+    width: 33.33%;
+    height: 33.33%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: calc(10px + 10vw);
+    text-transform: uppercase;
+
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    opacity: 0.9;
+    box-shadow: 0px -1px 1px 5px whitesmoke;
+    transition: all 0.11s;
+}
+
+.square.highlighted {
+    color: green;
+    opacity: 1;
+    background-color: white;
+}
+
+.square:hover {
+    box-shadow: 0px 0px 0px white;
+    background-color: #fdfdff;
+}
+
+.square.highlighted:hover {
+    background-color: white;
+    box-shadow: 0px -1px 1px 5px whitesmoke;
+}
+
+.square:nth-child(-n+6) {
+    border-bottom: 10px solid #ff2222;
+}
+
+.square:nth-child(3n+1),
+.square:nth-child(3n+2) {
+    border-right: 10px solid #ff2222;
+}
+
+#restart-button {
+    background-color: #e8e7ec;
+    color: #223e3d;
+    font-size: 4.20vw;
+    width: 100%;
+    font-family: monospace;
+    border: none;
+    position: absolute;
+    left: 0;
+    padding: 1vw;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+#restart-button:hover {
+    box-shadow: 0px 1px 2px 1px #dcdcdc;
+    background-color: #dbdade;
+}

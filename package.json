@@ -1,0 +1,15 @@
+{
+  "name": "node_websocket_ttc",
+  "version": "1.0.0",
+  "description": "websocket for tic tac toe game",
+  "main": "tictactoe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AndreiVen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.2.0"
+  }
+}
