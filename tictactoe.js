@@ -11,6 +11,7 @@ app.get('/', (req, res) => res.sendFile(__dirname + '/index.html'))
 
 io.on('connection', (socket) => {
     console.log(socket.id);
+    io.emit('restart', true) // start new game when new player arrives // there are no connection limits atm 
     socket.on('index', (i) => io.emit('index', i)) // send the index back to the client
     socket.on('restart', (restart) => io.emit('restart', restart)) // send the restart command back to the client
 })
