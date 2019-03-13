@@ -82,13 +82,13 @@ body {
 #restart-button {
     background-color: #e8e7ec;
     color: #223e3d;
-    font-size: 4.20vw;
+    font-size: 3.2vw;
     width: 100%;
     font-family: monospace;
     border: none;
     position: absolute;
     left: 0;
-    padding: 1vw;
+    padding: 0.5vw;
     cursor: pointer;
     transition: all 0.1s;
 }
